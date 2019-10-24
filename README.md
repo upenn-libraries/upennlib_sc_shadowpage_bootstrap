@@ -1,3 +1,10 @@
+## README for `upennlib_sc_shadowpage_bootstrap`
+
+This is a custom Omeka theme for Penn Libraries Special Collections, based on the Omeka Bootstrap Theme, porting over additional functionality for simple pages and exhibit builder to support the [ShadowPage](https://github.com/upenn-libraries/omeka-shadowpage-plugin).
+
+
+Original README:
+
 Omeka Bootstrap Theme
 =====================
 
