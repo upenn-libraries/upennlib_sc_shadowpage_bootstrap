@@ -20,7 +20,7 @@ echo head(array(
 <?php
 // Keep the form of the fork of Simple Contact.
 $options = array(
-    'form_attributes' => array('class' => 'form-horizontal'),
+    'form_attributes' => array('class' => 'form-horizontal', 'method' => 'post'),
     'name' => $name,
     'email' => $email,
     'message' => $message,
