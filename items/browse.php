@@ -73,11 +73,11 @@ echo head(array(
                     </div>
                     <div class="carousel-caption">
                         <h4><?php echo link_to_item(metadata($item, array('Dublin Core', 'Title')), array('class' => 'permalink')); ?></h4>
-                        <?php if ($description = metadata($item, array('Dublin Core', 'Description'), array('snippet' => 250))): ?>
+                        <?php if ($description = metadata($item, array('Dublin Core', 'Description'), array('snippet' => 25000))): ?>
                             <div class="item-description">
                                 <?php echo $description; ?>
                             </div>
-                        <?php elseif ($text = metadata($item, array('Item Type Metadata', 'Text'), array('snippet' => 250))): ?>
+                        <?php elseif ($text = metadata($item, array('Item Type Metadata', 'Text'), array('snippet' => 25000))): ?>
                             <div class="item-description">
                                 <?php echo $text; ?>
                             </div>
@@ -128,7 +128,7 @@ echo head(array(
                 <div class="item-description">
                     <p><?php echo $text; ?></p>
                 </div>
-                <?php elseif ($description = metadata($item,array('Dublin Core', 'Description'), array('snippet' => 250))): ?>
+                <?php elseif ($description = metadata($item,array('Dublin Core', 'Description'), array('snippet' => 25000))): ?>
                 <div class="item-description">
                     <?php echo $description; ?>
                 </div>
