@@ -39,7 +39,7 @@ echo head(array(
         $sortLinks[__('Title')] = 'Dublin Core,Title';
         $sortLinks[__('Creator')] = 'Dublin Core,Creator';
         $sortLinks[__('Date Added')] = 'added';
-        $sortLinks[__('Year')] = 'Dublin Core,Date';
+        $sortLinks[__('Year')] = 'Item Type Metadata,Year';
     ?>
     <div class="row">
         <div class="col-xs-12">
