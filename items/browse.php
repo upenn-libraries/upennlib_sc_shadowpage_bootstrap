@@ -9,7 +9,7 @@ if ($carousel) {
     queue_js_file('vendor/owl-carousel/owl.carousel.min');
 }
 
-$pageTitle = __('Browse Items');
+$pageTitle = __('Browse Entries');
 echo head(array(
     'title' => $pageTitle,
     'bodyclass' => 'items browse',
@@ -39,6 +39,7 @@ echo head(array(
         $sortLinks[__('Title')] = 'Dublin Core,Title';
         $sortLinks[__('Creator')] = 'Dublin Core,Creator';
         $sortLinks[__('Date Added')] = 'added';
+        $sortLinks[__('Year')] = 'Dublin Core,Date';
     ?>
     <div class="row">
         <div class="col-xs-12">
@@ -73,11 +74,11 @@ echo head(array(
                     </div>
                     <div class="carousel-caption">
                         <h4><?php echo link_to_item(metadata($item, array('Dublin Core', 'Title')), array('class' => 'permalink')); ?></h4>
-                        <?php if ($description = metadata($item, array('Dublin Core', 'Description'), array('snippet' => 25000))): ?>
+                        <?php if ($description = metadata($item, array('Dublin Core', 'Description')): ?>
                             <div class="item-description">
                                 <?php echo $description; ?>
                             </div>
-                        <?php elseif ($text = metadata($item, array('Item Type Metadata', 'Text'), array('snippet' => 25000))): ?>
+                        <?php elseif ($text = metadata($item, array('Item Type Metadata', 'Text')): ?>
                             <div class="item-description">
                                 <?php echo $text; ?>
                             </div>
