@@ -1,6 +1,6 @@
 ## README for `ja2-omeka-theme`
 
-This is a custom Omeka theme for the [Digital Second Edition of Judaica Americana](singermanja2.exhibits.library.upenn.edu) Omeka Site, forked from the Penn Libraries [Omeka theme](https://github.com/upenn-libraries/upennlib_sc_shadowpage_bootstrap)
+This is a custom Omeka theme for the [Digital Second Edition of Judaica Americana](https://singermanja2.exhibits.library.upenn.edu/) Omeka Site, forked from the Penn Libraries [Omeka theme](https://github.com/upenn-libraries/upennlib_sc_shadowpage_bootstrap)
 
 The original theme was made by Penn Libraries Special Collections, based on the Omeka Bootstrap Theme, porting over additional functionality for simple pages and exhibit builder to support the [ShadowPage](https://github.com/upenn-libraries/omeka-shadowpage-plugin).
 
