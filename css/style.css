@@ -1,5 +1,7 @@
 /**********GENERAL STYLES**************/
-
+.dublin-core-description {
+    border: 2px solid black;
+}
 h1,h2,h3,h4,h5,h6 {
     font-family: sans-serif;
     letter-spacing: 1px;
@@ -870,8 +872,4 @@ body {
       padding: 10px;
       color: #FFFFFF;
       font-size: 24px;
-    }
-
-    .dublin-core-description {
-      border: 2px solid black;
     }
