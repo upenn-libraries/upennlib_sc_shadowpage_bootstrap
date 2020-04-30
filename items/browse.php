@@ -74,7 +74,7 @@ echo head(array(
                     </div>
                     <div class="carousel-caption">
                         <h4><?php echo link_to_item(metadata($item, array('Dublin Core', 'Title')), array('class' => 'permalink')); ?></h4>
-                        <?php if ($description = metadata($item, array('Dublin Core', 'Description')): ?>
+                        <?php if ($description = metadata($item, array('Dublin Core', 'Description'))): ?>
                             <div class="item-description">
                                 <?php echo $description; ?>
                             </div>
