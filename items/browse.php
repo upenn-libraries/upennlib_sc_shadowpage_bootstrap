@@ -78,7 +78,7 @@ echo head(array(
                             <div class="item-description">
                                 <?php echo $description; ?>
                             </div>
-                        <?php elseif ($text = metadata($item, array('Item Type Metadata', 'Text')): ?>
+                        <?php elseif ($text = metadata($item, array('Item Type Metadata', 'Text'))): ?>
                             <div class="item-description">
                                 <?php echo $text; ?>
                             </div>
