@@ -37,7 +37,6 @@ echo head(array(
 <?php
     if ($total_results > 1):
         $sortLinks[__('Title')] = 'Dublin Core,Title';
-        $sortLinks[__('Creator')] = 'Dublin Core,Creator';
         $sortLinks[__('Date Added')] = 'added';
         $sortLinks[__('Year')] = 'Item Type Metadata,Year';
     ?>
