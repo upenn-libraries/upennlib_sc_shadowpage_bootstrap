@@ -36,8 +36,9 @@ echo head(array(
 <?php endif; ?>
 <?php
     if ($total_results > 1):
-        $sortLinks[__('Title')] = 'Dublin Core,Title';
         $sortLinks[__('Date Added')] = 'added';
+        $sortLinks[__('Singerman ID')] = 'Item Type Metadata,Singerman ID';
+        $sortLinks[__('Title')] = 'Dublin Core,Title';
         $sortLinks[__('Year')] = 'Item Type Metadata,Year';
     ?>
     <div class="row">
