@@ -120,17 +120,6 @@ $formAttributes['class'] = 'form-horizontal';
         <button type="button" class="add_search btn btn-success pull-right" title="<?php echo __('Add a Field'); ?>"><span class="glyphicon glyphicon-plus"></span> <?php echo __('Add a Field'); ?></button>
     </div>
 
-    <div id="search-by-range" class="field form-group">
-        <?php echo $this->formLabel('range', __('Search by a range of ID#s (example: 1-4, 156, 79)')); ?>
-        <div class="col-sm-10">
-        <div class="inputs input-group">
-        <?php
-            echo $this->formText('range', @$_GET['range'], array('size' => '40'));
-        ?>
-        </div>
-        </div>
-    </div>
-
     <div class="field form-group">
         <?php echo $this->formLabel('collection-search', __('Search By Collection')); ?>
         <div class="col-sm-10">
@@ -148,87 +137,12 @@ $formAttributes['class'] = 'form-horizontal';
     </div>
 
     <div class="field form-group">
-        <?php echo $this->formLabel('item-type-search', __('Search By Type')); ?>
-        <div class="col-sm-10">
-        <div class="inputs input-group">
-        <?php
-            echo $this->formSelect(
-                'type',
-                @$_REQUEST['type'],
-                array('id' => 'item-type-search'),
-                get_table_options('ItemType')
-            );
-        ?>
-        </div>
-        </div>
-    </div>
-
-    <?php if(is_allowed('Users', 'browse')): ?>
-    <div class="field form-group">
-    <?php
-        echo $this->formLabel('user-search', __('Search By User')); ?>
-        <div class="col-sm-10">
-        <div class="inputs input-group">
-        <?php
-            echo $this->formSelect(
-                'user',
-                @$_REQUEST['user'],
-                array('id' => 'user-search'),
-                get_table_options('User')
-            );
-        ?>
-        </div>
-        </div>
-    </div>
-    <?php endif; ?>
-
-    <div class="field form-group">
-        <?php echo $this->formLabel('tag-search', __('Search By Tags')); ?>
+        <?php echo $this->formLabel('tag-search', __('Search Index')); ?>
         <div class="col-sm-10">
         <div class="inputs input-group">
         <?php
             echo $this->formText('tags', @$_REQUEST['tags'],
                 array('size' => '40', 'id' => 'tag-search')
-            );
-        ?>
-        </div>
-        </div>
-    </div>
-
-    <?php if (is_allowed('Items','showNotPublic')): ?>
-    <div class="field form-group">
-        <?php echo $this->formLabel('public', __('Public/Non-Public')); ?>
-        <div class="inputs input-group">
-        <div class="col-sm-10">
-        <?php
-            echo $this->formSelect(
-                'public',
-                @$_REQUEST['public'],
-                array(),
-                label_table_options(array(
-                    '1' => __('Only Public Items'),
-                    '0' => __('Only Non-Public Items')
-                ))
-            );
-        ?>
-        </div>
-        </div>
-    </div>
-    <?php endif; ?>
-
-    <div class="field form-group">
-        <?php echo $this->formLabel('featured', __('Featured/Non-Featured')); ?>
-        <div class="col-sm-10">
-        <div class="inputs input-group">
-        <?php
-            echo $this->formSelect(
-                'featured',
-                @$_REQUEST['featured'],
-                array(),
-                label_table_options(array(
-                    '1' => __('Only Featured Items'),
-                    '0' => __('Only Non-Featured Items')
-                ))
             );
         ?>
         </div>
