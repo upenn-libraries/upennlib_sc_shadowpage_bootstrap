@@ -171,6 +171,7 @@ endif;
                     </div>
                 </div>
                 <div class="col-sm-3">
+                    <?php if (is_admin_theme()): //(has_permission('Users', 'browse')): ?>
                     <div id="search-by-range" class="field">
                         <label for="range" class="label label-default"><?php echo __('Search by a range of ID#s (example: 1-4, 156, 79)'); ?></label>
                         <div class="inputs">
@@ -247,6 +248,7 @@ endif;
                     <?php endif; ?>
                 </div>
                 <div class="col-sm-4">
+                    <?php if (is_admin_theme()): //(has_permission('Users', 'browse')): ?>
                     <div class="field">
                         <?php echo label(array('for' => 'featured', 'class' => 'label'), __('Featured/Non-Featured')); ?>
                         <div class="inputs">
