@@ -120,6 +120,7 @@ $formAttributes['class'] = 'form-horizontal';
         <button type="button" class="add_search btn btn-success pull-right" title="<?php echo __('Add a Field'); ?>"><span class="glyphicon glyphicon-plus"></span> <?php echo __('Add a Field'); ?></button>
     </div>
 
+    <?php if(is_allowed('Users', 'browse')): ?>
     <div id="search-by-range" class="field form-group">
         <?php echo $this->formLabel('range', __('Search by a range of ID#s (example: 1-4, 156, 79)')); ?>
         <div class="col-sm-10">
@@ -147,6 +148,7 @@ $formAttributes['class'] = 'form-horizontal';
         </div>
     </div>
 
+    <?php if(is_allowed('Users', 'browse')): ?>
     <div class="field form-group">
         <?php echo $this->formLabel('item-type-search', __('Search By Type')); ?>
         <div class="col-sm-10">
@@ -216,6 +218,7 @@ $formAttributes['class'] = 'form-horizontal';
     </div>
     <?php endif; ?>
 
+    <?php if(is_allowed('Users', 'browse')): ?>
     <div class="field form-group">
         <?php echo $this->formLabel('featured', __('Featured/Non-Featured')); ?>
         <div class="col-sm-10">
