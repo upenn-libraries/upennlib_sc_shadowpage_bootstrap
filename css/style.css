@@ -475,7 +475,11 @@ footer p {
     line-height: 15px;
 }
 footer a {
-    font-weight:bold;
+    font-weight:normal;
+    color: #FFFFFF;
+}
+footer a hover {
+    font-weight: bold;
     color: #FFFFFF;
 }
 .omeka-props-footer {
@@ -875,6 +879,6 @@ body {
         font-weight: bold;
     }
     .navbar-default .navbar-nav>li>a {
-    color: #545454;
-    font-weight: normal;
+      color: #545454 !important;
+      font-weight: normal;
 }
