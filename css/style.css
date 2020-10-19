@@ -476,6 +476,7 @@ footer p {
 }
 footer a {
     font-weight:bold;
+    color: #FFFFFF;
 }
 .omeka-props-footer {
     font-size: 10px;
@@ -870,3 +871,9 @@ body {
       color: #FFFFFF;
       font-size: 24px;
     }
+    .navbar-default .navbar-nav>li>a:hover {
+        color: #196371;
+    }
+    .navbar-default .navbar-nav>li>a {
+    color: #545454;
+}
