@@ -131,6 +131,7 @@ $formAttributes['class'] = 'form-horizontal';
         </div>
         </div>
     </div>
+    <?php endif; ?>
 
     <div class="field form-group">
         <?php echo $this->formLabel('collection-search', __('Search By Collection')); ?>
@@ -164,6 +165,7 @@ $formAttributes['class'] = 'form-horizontal';
         </div>
         </div>
     </div>
+    <?php endif; ?>
 
     <?php if(is_allowed('Users', 'browse')): ?>
     <div class="field form-group">
@@ -237,6 +239,7 @@ $formAttributes['class'] = 'form-horizontal';
         </div>
         </div>
     </div>
+    <?php endif; ?>
 
     <?php fire_plugin_hook('public_items_search', array('view' => $this)); ?>
     <div class="col-sm-offset-2">
