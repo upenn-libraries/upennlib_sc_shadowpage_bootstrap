@@ -872,8 +872,9 @@ body {
       font-size: 24px;
     }
     .navbar-default .navbar-nav>li>a:hover {
-        color: #196371;
+        font-weight: bold;
     }
     .navbar-default .navbar-nav>li>a {
     color: #545454;
+    font-weight: normal;
 }
