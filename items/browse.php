@@ -21,9 +21,6 @@ echo head(array(
         <h1><span class="glyphicon glyphicon-list"></span> <?php echo $pageTitle;?> <small><?php echo __('(%s items total)', $total_results); ?></small></h1>
         </div>
     </div>
-    <nav class="items-nav navigation secondary-nav">
-        <?php echo public_nav_items()->setUlClass('nav nav-pills'); ?>
-    </nav>
 <?php if ($searchFilters = item_search_filters()): ?>
     <div class="bs-callout bs-callout-info">
         <?php echo $searchFilters; ?>
@@ -37,8 +34,8 @@ echo head(array(
 <?php
     if ($total_results > 1):
         $sortLinks[__('Title')] = 'Dublin Core,Title';
-        $sortLinks[__('Creator')] = 'Dublin Core,Creator';
         $sortLinks[__('Date Added')] = 'added';
+        $sortLinks[__('Year')] = 'Item Type Metadata,Year';
     ?>
     <div class="row">
         <div class="col-xs-12">
