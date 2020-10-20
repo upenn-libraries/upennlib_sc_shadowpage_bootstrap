@@ -188,6 +188,8 @@ $formAttributes['class'] = 'form-horizontal';
 
     <div class="field form-group">
         <?php echo $this->formLabel('tag-search', __('Search By Tags')); ?>
+=======
+        <?php echo $this->formLabel('tag-search', __('Search Index')); ?>
         <div class="col-sm-10">
         <div class="inputs input-group">
         <?php

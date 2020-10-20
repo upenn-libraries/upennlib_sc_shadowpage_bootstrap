@@ -1,5 +1,5 @@
 <?php
-$pageTitle = __('Browse Items');
+$pageTitle = __('Browse Entries');
 echo head(array(
     'title' => $pageTitle,
     'bodyid' => 'items',

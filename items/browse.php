@@ -9,7 +9,7 @@ if ($carousel) {
     queue_js_file('vendor/owl-carousel/owl.carousel.min');
 }
 
-$pageTitle = __('Browse Items');
+$pageTitle = __('Browse Entries');
 echo head(array(
     'title' => $pageTitle,
     'bodyclass' => 'items browse',
@@ -33,8 +33,9 @@ echo head(array(
 <?php endif; ?>
 <?php
     if ($total_results > 1):
-        $sortLinks[__('Title')] = 'Dublin Core,Title';
         $sortLinks[__('Date Added')] = 'added';
+        $sortLinks[__('Singerman ID')] = 'Item Type Metadata,Singerman ID';
+        $sortLinks[__('Title')] = 'Dublin Core,Title';
         $sortLinks[__('Year')] = 'Item Type Metadata,Year';
     ?>
     <div class="row">
@@ -70,11 +71,11 @@ echo head(array(
                     </div>
                     <div class="carousel-caption">
                         <h4><?php echo link_to_item(metadata($item, array('Dublin Core', 'Title')), array('class' => 'permalink')); ?></h4>
-                        <?php if ($description = metadata($item, array('Dublin Core', 'Description'), array('snippet' => 250))): ?>
+                        <?php if ($description = metadata($item, array('Dublin Core', 'Description'))): ?>
                             <div class="item-description">
                                 <?php echo $description; ?>
                             </div>
-                        <?php elseif ($text = metadata($item, array('Item Type Metadata', 'Text'), array('snippet' => 250))): ?>
+                        <?php elseif ($text = metadata($item, array('Item Type Metadata', 'Text'))): ?>
                             <div class="item-description">
                                 <?php echo $text; ?>
                             </div>
@@ -121,11 +122,11 @@ echo head(array(
                 <div class="item-title">
                     <h3><?php echo link_to_item(metadata($item, array('Dublin Core', 'Title')), array('class' => 'permalink', 'snippet' => 250)); ?></h3>
                 </div>
-                <?php if ($text = metadata($item, array('Item Type Metadata', 'Text'), array('snippet' => 250))): ?>
+                <?php if ($text = metadata($item, array('Item Type Metadata', 'Text'))): ?>
                 <div class="item-description">
                     <p><?php echo $text; ?></p>
                 </div>
-                <?php elseif ($description = metadata($item,array('Dublin Core', 'Description'), array('snippet' => 250))): ?>
+                <?php elseif ($description = metadata($item,array('Dublin Core', 'Description'))): ?>
                 <div class="item-description">
                     <?php echo $description; ?>
                 </div>

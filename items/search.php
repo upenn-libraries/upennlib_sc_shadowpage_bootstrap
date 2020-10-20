@@ -1,5 +1,5 @@
 <?php
-$pageTitle = __('Search Items');
+$pageTitle = __('Search Entries');
 echo head(array(
     'title' => $pageTitle,
     'bodyclass' => 'items advanced-search',
