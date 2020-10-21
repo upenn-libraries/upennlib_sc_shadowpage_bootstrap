@@ -1,5 +1,7 @@
 /**********GENERAL STYLES**************/
-
+.dublin-core-description {
+    border: 2px solid black;
+}
 h1,h2,h3,h4,h5,h6 {
     font-family: sans-serif;
     letter-spacing: 1px;
@@ -103,7 +105,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: #24899b;
+    color: ##000000;
     text-decoration: none;
 }
 .navbar-nav>li>a:hover,
@@ -475,7 +477,12 @@ footer p {
     line-height: 15px;
 }
 footer a {
-    font-weight:bold;
+    font-weight:normal;
+    color: #FFFFFF;
+}
+footer a hover {
+    font-weight: bold;
+    color: #FFFFFF;
 }
 .omeka-props-footer {
     font-size: 10px;
@@ -676,8 +683,8 @@ body {
     word-break: break-word;
     line-height: 24px; }
   h1, h2, h3, legend, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 24px;
+    margin-top: 24px;
+    margin-bottom: 0px;
     font-family: Georgia, "Times New Roman", Times, serif;
 	  font-weight: bold;
     color: #ae1f2c;
@@ -870,3 +877,10 @@ body {
       color: #FFFFFF;
       font-size: 24px;
     }
+    .navbar-default .navbar-nav>li>a:hover {
+        font-weight: bold;
+    }
+    .navbar-default .navbar-nav>li>a {
+      color: #545454 !important;
+      font-weight: normal;
+}

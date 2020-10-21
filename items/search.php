@@ -1,5 +1,5 @@
 <?php
-$pageTitle = __('Search Items');
+$pageTitle = __('Search Entries');
 echo head(array(
     'title' => $pageTitle,
     'bodyclass' => 'items advanced-search',
@@ -12,9 +12,6 @@ echo head(array(
             <h1><span class="glyphicon glyphicon-search"></span> <?php echo $pageTitle; ?></h1>
         </div>
     </div>
-    <nav class="items-nav navigation secondary-nav">
-        <?php echo public_nav_items()->setUlClass('nav nav-pills'); ?>
-    </nav>
     <br />
     <?php echo $this->partial('items/search-form.php',
         array('formAttributes' =>
